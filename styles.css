@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.heading{
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: 4%;
+  margin-left: 35%;
+}
+.heading h3 {
+  margin-left: 10%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(pcb5.jpeg);
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
+}
+.container{
+  width: 360px;
+  height: 400px;
+  margin: 9% auto;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+h2, h4{
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+.container form{
+  text-align: center;
+  width: 280px;
+  position: absolute;
+  top: 55px;
+  left: 40px;
+  transition: 0.5s;
+}
+
+.btn-box{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+} 
+
+.step-row{
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.step-col{
+  width: 120px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+#progress{
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background: linear-gradient( to right, #ff105f, #ffad06);
+  transition: 1s;
+}
+#progress::after{
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #ffad06;
+}
+.arrow1{
+  padding: 20px 10px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 5px;
+  background: linear-gradient( to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  color: #000;
+
+}
+@media only screen and (max-width: 500px) {
+  .flex {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(pcb5.jpeg);
+    background-repeat: repeat ;
+    background-size: contain;
+    background-position: center;
+  }
+}
